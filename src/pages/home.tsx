@@ -1,6 +1,9 @@
 import { useMemo } from 'react';
 import matchaImg from '../assets/matcha-img-of-me.jpg';
 
+import Nav from '../components/Nav.tsx';
+import Footer from '../components/Footer.tsx';
+
 
 // for lines of binary text in background
 const BINARY_OPTIONS = ["01010111 01111001 01101110 01101110", "01001101 01110101 01110011 01110011 01100101 01101100 01101101 01100001 01101110", "01001000 01100101 01101100 01101100 01101111 00100001"];
@@ -20,8 +23,8 @@ function Home(){
                 id: i,
                 text: BINARY_OPTIONS[get_rand_number()],
                 color: COLOR_OPTIONS[get_rand_number()],
-                top: `${Math.floor(Math.random() * 20)}vh`,
-                duration: `${Math.floor(Math.random() * 40) + 20}s`,
+                top: `${Math.floor(Math.random() * 20)}vh`, 
+                duration: `${Math.floor(Math.random() * 40) + 20}s`, //randomizes how long it takes each binary line to scroll passed
             })),
         [],
     )
@@ -30,16 +33,7 @@ function Home(){
         <>
 
             {/* navigation bar */}
-            <nav>
-                <ul>
-                    <li><a href = "/">Home</a></li>
-                    <li><a href = "">Internships</a></li>
-                    <li><a href = "">Work Experience</a></li>
-                    <li><a href = "">Campus Involvement</a></li>
-                    <li><a href = "">Projects</a></li>
-                    <li><a href = "">Gallery</a></li>
-                </ul>
-            </nav>
+            <Nav/>
 
             {/* header */}
             <header>
@@ -98,9 +92,7 @@ function Home(){
             </main>
 
             {/* footer */}
-            <footer>
-                <p>⋄ <a href = "https://www.linkedin.com/in/wynn-musselman/">linkedin.com/in/wynn-musselman/</a> ⋄ <a href = "https://github.com/WynnMusselman">github.com/WynnMusselman</a> ⋄</p>
-            </footer>
+            <Footer/>
         </>
     )
 }
