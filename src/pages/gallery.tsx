@@ -1,22 +1,19 @@
-import { useMemo } from 'react';
-
 import Nav from '../components/Nav.tsx';
 import Footer from '../components/Footer.tsx';
 
-function WorkExperience(){
+function Gallery(){
     return(
         <>
-            {/* Nav bar */}
+            {/* nav */}
             <Nav/>
 
             {/* header */}
-            {/* <header>
-                <h1>Wynn Musselman</h1>
-            </header> */}
 
             {/* main */}
             <main>
-                <h2>&lt;h2&gt; Work Experience &lt;/h2&gt;</h2>
+                <div className = "gallery-layout">
+                    
+                </div>
             </main>
 
             {/* footer */}
@@ -25,4 +22,4 @@ function WorkExperience(){
     )
 }
 
-export default WorkExperience;
+export default Gallery;

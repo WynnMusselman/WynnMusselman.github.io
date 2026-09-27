@@ -73,9 +73,14 @@ nav ul li a:hover{
    
 }
 
-/* header - binary and hello world */
-
+/* normal header */
 header{
+    
+}
+
+/* binary and hello world header*/
+
+#binary-header{
     position: relative;
     height: 100vh;
     display: flex;
@@ -87,7 +92,7 @@ header{
     /* z-index: 10; */
 }
 
-header p{
+#binary-header p{
     color: yellowgreen;
 }
 
@@ -105,7 +110,6 @@ header p{
     animation: scroll 10s linear infinite;
     /* position: absolute; */
     white-space: nowrap;
-    right: 20vw;
     font: calc(2px + 5vw) monospace;
 }
 
@@ -116,6 +120,8 @@ main{
 
     margin: auto;
     width: 90%;
+
+    min-height: 100vh;
 
     /* fade in animation on div */
     animation: fadeIn;
@@ -184,6 +190,46 @@ footer p, footer a{
   100% {
     opacity: 1;
   }
+}
+
+
+@media screen and (max-width: 800px){
+    /* header */
+    header{
+        height: 90vh;
+    }
+
+    /* for two column layout */
+    .two-col{
+        flex-direction: column;
+    }
+
+    .left-inner-col{
+        width: 100%;
+    } 
+
+     .right-inner-col{
+        width: 100%;
+    }
+
+    .left-inner-col img{
+        object-fit: cover;
+        width: 400px;
+        height: 150px;
+    }
+
+    .two-col p{
+        padding-top: 5%;
+        margin: auto;
+        text-align: left;
+    }
+
+    .two-col .left-inner-col .img-caption{
+        color: greenyellow;
+        font: italic calc(2px + 1.1vw) monospace;
+        text-align: center;
+        padding-top: 0;
+    }
 }
 
 /* @keyframes spin {

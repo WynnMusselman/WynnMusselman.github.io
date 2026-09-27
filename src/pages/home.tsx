@@ -36,7 +36,7 @@ function Home(){
             <Nav/>
 
             {/* header */}
-            <header>
+            <header id = "binary-header">
                 {/*binary numbers in background*/}
                 <div id = "binary-wrapper">
                     {binaryLines.map((line) =>(
