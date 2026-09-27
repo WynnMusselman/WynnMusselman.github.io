@@ -4,7 +4,7 @@ import { defineConfig } from 'vite'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/my-personal-portfolio/',
+  base: '/WynnMusselman.github.io/',
   plugins: [
     react(),
     babel({ presets: [reactCompilerPreset()] })
