@@ -6,7 +6,7 @@ import Gallery from './pages/gallery.tsx';
 
 function App() {
   return (
-    <BrowserRouter basename = "/WynnMusselman.github.io">
+    <BrowserRouter>
       <Routes>
         <Route path = "/" element = {<Home />} />
         <Route path = "/work-experience" element = {<WorkExperience />} />
