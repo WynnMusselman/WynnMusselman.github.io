@@ -25,6 +25,7 @@ function Home(){
                 color: COLOR_OPTIONS[get_rand_number()],
                 top: `${Math.floor(Math.random() * 20)}vh`, 
                 duration: `${Math.floor(Math.random() * 40) + 20}s`, //randomizes how long it takes each binary line to scroll passed
+
             })),
         [],
     )

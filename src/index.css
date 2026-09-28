@@ -119,6 +119,7 @@ header{
     /* position: absolute; */
     white-space: nowrap;
     font: calc(2px + 5vw) monospace;
+    animation-delay: -50s;
 }
 
 
