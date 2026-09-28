@@ -33,9 +33,20 @@ h3{
     margin: 4%;
 }
 
+h4{
+    font: calc(2px + 1.8vw) monospace;
+}
+
 p{
     color: white;
     font: calc(2px + 1.5vw) monospace;
+}
+
+.caption{
+    color: greenyellow;
+    font: calc(2px + 1.4vw) monospace;
+    text-align: center;
+    padding-top: 0;
 }
 
 nav{
@@ -75,7 +86,8 @@ nav ul li a:hover{
 
 /* normal header */
 header{
-    
+    color: rgb(226, 96, 187);
+    margin-top: 8%;
 }
 
 /* binary and hello world header*/
@@ -90,10 +102,6 @@ header{
     align-items: center;      /* vertical */
 
     /* z-index: 10; */
-}
-
-#binary-header p{
-    color: yellowgreen;
 }
 
 
@@ -122,14 +130,16 @@ main{
     width: 90%;
 
     min-height: 100vh;
+}
 
-    /* fade in animation on div */
+#home-page{
+    /* fade in animation on home page main content */
     animation: fadeIn;
     animation-timeline: view();
 }
 
-/* for two column layout */
-.two-col{
+/* for multi column layout */
+.multi-col{
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -137,6 +147,7 @@ main{
     align-items: center;
 }
 
+/* home page */
 .left-inner-col{
     width: 40%;
 }
@@ -149,18 +160,41 @@ main{
     max-width: 25vw;
 }
 
-.two-col p{
+.multi-col p{
     padding-top: 5%;
     margin: auto;
     text-align: left;
 }
 
-.two-col .left-inner-col .img-caption{
+.multi-col .left-inner-col .caption{
     color: greenyellow;
     font: italic calc(2px + 1.1vw) monospace;
     text-align: center;
     padding-top: 0;
 }
+
+/* for gallery */
+.multi-col .img-layout{
+    display: flex;
+    flex-direction: column;
+    margin: 3%;
+
+    /* fade in animation on each row of images */
+    animation: fadeIn;
+    animation-timeline: view();
+}
+
+.multi-col .img-layout img{
+    max-width: 20vw;
+}
+
+
+.multi-col .img-layout .caption{
+    
+}
+
+
+
 
 footer{
     margin-top: 4%;

@@ -2,6 +2,7 @@
 
 import Nav from '../components/Nav.tsx';
 import Footer from '../components/Footer.tsx';
+import Header from '../components/Header.tsx';
 
 function WorkExperience(){
     return(
@@ -10,9 +11,7 @@ function WorkExperience(){
             <Nav/>
 
             {/* header */}
-            {/* <header>
-                <h1>Wynn Musselman</h1>
-            </header> */}
+            <Header/>
 
             {/* main */}
             <main>

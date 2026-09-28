@@ -57,19 +57,22 @@ function Home(){
 
                 {/* intro text */}
                 <h1>&lt;h1&gt; Hello World, I'm Wynn! &lt;/h1&gt;</h1>
-                <p>&lt;p&gt; <i>Thanks for visiting my site :]</i> &lt;/p&gt;</p>
+                <p className = "caption">&lt;p&gt; <i>Thanks for visiting my site :]</i> &lt;/p&gt;</p>
             </header>
 
             {/* main content */}
-            <main>
+            <main id = "home-page">
                 <h2>&lt;h2&gt; About Me &lt;/h2&gt;</h2>
 
                 {/* <!-- two column layout for img and text --> */}
-                <div className = "two-col">
+                <div className = "multi-col">
 
                     <div className = "left-inner-col">
+
+                        
                         <img src = {matchaImg} alt = "Photo of Wynn Musselman"/>
-                        <p className = "img-caption">↑ Picture of me with some matcha!</p>
+                        <p className = "caption">↑ Picture of me with some matcha!</p>
+                        
                     </div>
                     
                     <div className = "right-inner-col">
