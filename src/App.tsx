@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './pages/home.tsx';
 import WorkExperience from './pages/work-experience.tsx';
-import Gallery from './pages/Gallery.tsx';
+import Gallery from './pages/gallery.tsx';
 
 
 function App() {
