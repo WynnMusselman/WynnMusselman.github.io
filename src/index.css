@@ -242,10 +242,9 @@ footer p, footer a{
 
 
 @media screen and (max-width: 800px){
-    /* header */
 
     /* for two column layout */
-    .two-col{
+    .multi-col{
         flex-direction: column;
     }
 
