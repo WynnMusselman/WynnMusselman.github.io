@@ -222,6 +222,8 @@ footer p, footer a{
 }
 
 
+/* animation */
+
 @keyframes scroll{
     0%{
         transform: translateX(100%);
@@ -240,7 +242,7 @@ footer p, footer a{
   }
 }
 
-
+/* responsive layout when on mobile */
 @media screen and (max-width: 800px){
 
     /* for two column layout */
