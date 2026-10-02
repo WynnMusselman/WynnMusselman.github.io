@@ -29,8 +29,7 @@ h2{
 
 h3{
     color: white;
-    font: italic bold calc(2px + 2vw) monospace;
-    margin: 4%;
+    font: bold calc(2px + 2vw) monospace;
 }
 
 h4{
@@ -150,15 +149,15 @@ main{
 }
 
 /* home page */
-.left-inner-col{
+.small-inner-col{
     width: 40%;
 }
 
-.right-inner-col{
+.big-inner-col{
     width: 60%;
 }
 
-.left-inner-col img{
+.small-inner-col img{
     max-width: 25vw;
 }
 
@@ -168,7 +167,7 @@ main{
     text-align: left;
 }
 
-.multi-col .left-inner-col .caption{
+.multi-col .small-inner-col .caption{
     color: greenyellow;
     font: italic calc(2px + 1.1vw) monospace;
     text-align: center;
@@ -208,7 +207,15 @@ main{
 }
 
 
+/* work experience */
+.work-experience{
+    margin: 6% 0;
+}
 
+.work-experience h3{
+    color: greenyellow;
+    /* font-style: none; */
+}
 
 footer{
     margin-top: 4%;
@@ -250,15 +257,15 @@ footer p, footer a{
         flex-direction: column;
     }
 
-    .left-inner-col{
+    .big-inner-col{
         width: 100%;
     } 
 
-     .right-inner-col{
+    .small-inner-col{
         width: 100%;
     }
 
-    .left-inner-col img{
+    .small-inner-col img{
         object-fit: cover;
         width: 400px;
         height: 150px;
@@ -270,7 +277,7 @@ footer p, footer a{
         text-align: left;
     }
 
-    .two-col .left-inner-col .img-caption{
+    .two-col .small-inner-col .img-caption{
         color: greenyellow;
         font: italic calc(2px + 1.1vw) monospace;
         text-align: center;

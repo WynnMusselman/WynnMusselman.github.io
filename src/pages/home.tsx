@@ -68,15 +68,13 @@ function Home(){
                 {/* <!-- two column layout for img and text --> */}
                 <div className = "multi-col">
 
-                    <div className = "left-inner-col">
-
-                        
-                        <img src = {matchaImg} alt = "Photo of Wynn Musselman"/>
+                    <div className = "small-inner-col">
+                        <img src = {matchaImg} alt = "Wynn Musselman"/>
                         <p className = "caption">↑ Picture of me with some matcha!</p>
                         
                     </div>
                     
-                    <div className = "right-inner-col">
+                    <div className = "big-inner-col">
                         
                         <p>
                             My name is Wynn Musselman! I'm from the Pittsburgh area, but I go to school

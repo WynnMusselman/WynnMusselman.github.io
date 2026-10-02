@@ -2,7 +2,6 @@ import Nav from '../components/Nav.tsx';
 import Footer from '../components/Footer.tsx';
 import Header from '../components/Header.tsx';
 
-import matchaImg from '../assets/matcha-img-of-me.jpg';
 import hackathonImg from '../assets/hackathon-dsx.jpeg';
 import pizzaImg from '../assets/pizza.jpg';
 import hockeyImg from '../assets/hockey.jpg'
