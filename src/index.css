@@ -48,40 +48,6 @@ p{
     padding-top: 0;
 }
 
-nav{
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 2%;
-
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 11;
-}
-
-/* nav bar */
-nav ul{
-    text-align: center;
-    padding-left: none;
-}
-
-nav ul li{
-    display: inline;
-    list-style: none;
-    padding: 2%;
-}
-
-nav ul li a{
-    opacity: 100%;
-    color: cyan;
-    font: calc(2px + 1.5vw) monospace;
-    text-decoration: none;
-}
-
-nav ul li a:hover{
-    font-style: italic;
-    font-weight: bold;
-   
-}
 
 /* normal header */
 header{
