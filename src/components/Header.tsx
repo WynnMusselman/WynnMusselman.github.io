@@ -7,7 +7,7 @@ const HeaderWrapper = styled.header`
 
 const HeaderText = styled.h1`
     font: calc(2px + 1.8vw) monospace;
-    color: rgb(226, 96, 187);
+    color: #DA70D6;
 `
 
 function Header(){

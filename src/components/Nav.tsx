@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 
 const NavWrapper = styled.nav `
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(31, 31, 31, 0.5);
     padding: 2%;
 
     position: fixed;
@@ -25,7 +25,7 @@ const ListItem = styled.li`
 
 const LinkText = styled.a`
     opacity: 100%;
-    color: cyan;
+    color: #68CDFE;
     font: calc(2px + 1.5vw) monospace;
     text-decoration: none;
 

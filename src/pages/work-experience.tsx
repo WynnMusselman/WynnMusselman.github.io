@@ -26,6 +26,7 @@ function WorkExperience(){
                 {/* Boston University Spark! */}
                 <div className = "work-experience">
                     <h3>Boston University Spark!</h3>
+                    <h4>Boston, MA  ⋄ September 2026 - Present</h4>
 
                     <div className = "multi-col">
                         
