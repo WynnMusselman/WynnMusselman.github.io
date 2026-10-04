@@ -8,6 +8,7 @@ import simcoachImg from '../assets/simcoach-games.jpg';
 import pizzaIQImg from '../assets/pizza-iq.jpeg';
 import elConnectorIMG from '../assets/el-connector-homepage.png';
 import dynseoImg from '../assets/dynseo-metro-view.jpg';
+import sparkIMG from '../assets/CDS-building.jpg';
 
 function WorkExperience(){
     return(
@@ -21,6 +22,49 @@ function WorkExperience(){
             {/* main */}
             <main>
                 <h2>&lt;h2&gt; Work Experience &lt;/h2&gt;</h2>
+
+                {/* Boston University Spark! */}
+                <div className = "work-experience">
+                    <h3>Boston University Spark!</h3>
+
+                    <div className = "multi-col">
+                        
+                        <div className = "small-inner-col">
+                            <img src = {sparkIMG} alt = "The jenga building in Boston"/>
+                            <p className = "caption">The building I get to work in!</p>
+                        </div>
+
+                        <div className = "big-inner-col">
+                            <p>
+                                As a Community Ambassador for Spark!, I aid in the daily operations 
+                                and mission for the experiential and innovation learning lab housed 
+                                within the Computing and Data Science Department (CDS) at BU. I 
+                                welcome students into the Spark! space and answer any questions they 
+                                have. I also ensure conference rooms and shared areas in the CDS 
+                                building are organized and all technology is working. I collaborate
+                                with CDS staff and fellow employees on events to make sure they run 
+                                smoothly.
+                            </p>
+                            <p>
+                                After having attended so many Spark! events (hackathons, Code & Tell, 
+                                Tech Talks...) I am so excited that I now get to work in the Spark! space
+                                and help contribute to the organization.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                {/* Grader */}
+                <div className = "work-experience">
+                    <h3>Boston University Department of Computer Science</h3>
+                    <p>
+                        I am a grader for CAS CS 103: Introduction to Internet Technologies and 
+                        Web Programming. As a grader, I will evaluate 180+ mini projects created
+                        by students while also giving detailed, constructive feedback. I collaborate 
+                        with the class's Professor, TA, and fellow grader to ensure accurate and 
+                        quality grades and feedback are given to students.
+                    </p>
+                </div>
 
                 {/* Dynseo */}
                 <div className = "work-experience">
@@ -73,13 +117,9 @@ function WorkExperience(){
                                 within BU, they had to stick to WordPress and BU's official WordPress theme. 
                                 This meant that many of the improvements I wanted to make coming into the 
                                 internship had to be scrapped. Nonetheless, I coordinated closely with director
-                                of EL Connector to broaden 
-                                their presence across online platforms, improve user experience, and connect 
-                                more students with experiential learning opportunities. 
-                            </p>
-                            <p>
-                                I updated site information, redesigned photos and the header banner for the homepage, 
-                                and made descriptions of programs offered more concise, yet informative.
+                                of EL Connector to work within the limitations. I increased the BU branding on 
+                                the site by incorporating BU's colors wherever possible, I made descriptions of 
+                                programs offed more concise, and updated site information to be accurate.
                             </p>
                         </div>
                     </div>

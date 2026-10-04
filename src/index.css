@@ -210,11 +210,17 @@ main{
 /* work experience */
 .work-experience{
     margin: 6% 0;
+    animation: fadeIn;
+    animation-timeline: view();
 }
 
 .work-experience h3{
     color: greenyellow;
-    /* font-style: none; */
+    margin: 2%;
+}
+
+.work-experience p{
+    text-align: left;
 }
 
 footer{
@@ -251,6 +257,11 @@ footer p, footer a{
 
 /* responsive layout when on mobile */
 @media screen and (max-width: 800px){
+
+    /* nav a{
+        font: calc(2px + 2vw);
+       
+    } */
 
     /* for two column layout */
     .multi-col{
