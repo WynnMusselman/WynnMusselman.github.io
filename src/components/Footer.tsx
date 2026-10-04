@@ -15,7 +15,7 @@ const FooterText = styled.p`
 function Footer(){
     return(
         <FooterWrapper>
-            <FooterText> ⋄ <FooterText as = "a" href = "https://www.linkedin.com/in/wynn-musselman/">My LinkedIn</FooterText> ⋄ <FooterText as = "a" href = "https://github.com/WynnMusselman">My GitHub</FooterText> ⋄ <FooterText as = "a" href = "https://wynnmusselman.github.io/">My Website</FooterText> ⋄
+            <FooterText> ⋄ <FooterText as = "a" href = "https://www.linkedin.com/in/wynn-musselman/">linkedin.com/in/wynn-musselman/</FooterText> ⋄ <FooterText as = "a" href = "https://github.com/WynnMusselman">github.com/WynnMusselman</FooterText> ⋄ <FooterText as = "a" href = "https://wynnmusselman.github.io/">wynnmusselman.github.io</FooterText> ⋄
             </FooterText>
         </FooterWrapper>
     )

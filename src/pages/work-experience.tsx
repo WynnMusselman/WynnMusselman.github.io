@@ -26,8 +26,9 @@ function WorkExperience(){
                 {/* Boston University Spark! */}
                 <div className = "work-experience">
                     <h3>Boston University Spark!</h3>
-                    <h4>Boston, MA  ⋄ September 2026 - Present</h4>
-
+                        
+                    <h4><b>Community Ambassador</b> | Boston, MA  | September 2026 - Present</h4>
+                       
                     <div className = "multi-col">
                         
                         <div className = "small-inner-col">
@@ -58,6 +59,9 @@ function WorkExperience(){
                 {/* Grader */}
                 <div className = "work-experience">
                     <h3>Boston University Department of Computer Science</h3>
+                        
+                    <h4><b>Grader</b> | Boston, MA  | September 2026 - Present</h4>
+                       
                     <p>
                         I am a grader for CAS CS 103: Introduction to Internet Technologies and 
                         Web Programming. As a grader, I will evaluate 180+ mini projects created
@@ -71,6 +75,10 @@ function WorkExperience(){
                 <div className = "work-experience">
                     <h3>Dynseo</h3>
 
+                    {/* role, location, date */}
+                        
+                    <h4><b>Intern</b> | Paris, Fr  | May 2026 - July 2026</h4>
+                
                     <div className = "multi-col">
                         <div className = "big-inner-col">
                             <p>
@@ -103,7 +111,10 @@ function WorkExperience(){
                 {/* EL Connector */}
                 <div className = "work-experience">
                     <h3>Boston University College of Arts & Sciences Experiential Learning Connector</h3>
-
+                    {/* role, location, date */}
+                   
+                    <h4><b>Digital Content Strategy Intern</b> | Boston, MA  | January 2026 - April 2026</h4>
+                      
                     <div className = "multi-col">
                         
                         <div className = "small-inner-col">
@@ -130,6 +141,9 @@ function WorkExperience(){
                 {/* Pizza IQ */}
                 <div className = "work-experience">
                     <h3>Pizza IQ</h3>
+                    {/* role, location, date */}
+                      
+                    <h4><b>Kitchen Staff and Cashier </b>| Cranberry Township, PA  | June 2024 - Present (Seasonal)</h4>
 
                     <div className = "multi-col">
                         <div className = "big-inner-col">
@@ -163,7 +177,10 @@ function WorkExperience(){
                 {/* simcoach*/}
                 <div className = "work-experience">
                     <h3>Simcoach Games</h3>
-
+                    {/* role, location, date */}
+                    
+                    <h4><b>Apprentice</b> | Pittsburgh, PA  | June 2023 - July 2023</h4>
+                       
                     <div className = "multi-col">
                         <div className = "small-inner-col">
                             <img src = {simcoachImg} alt = "me creating a video game"/>
