@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import styled from "styled-components";
 
 
@@ -40,11 +40,11 @@ function Nav() {
     return(
         <NavWrapper>
                 <ListWrapper>
-                    <ListItem><LinkText to = "/">Home</LinkText></ListItem>
-                    <ListItem><LinkText to = "/work-experience">Work Experience</LinkText></ListItem>
-                    <ListItem><LinkText to = "/campus-involvement">Campus Involvement</LinkText></ListItem>
-                    <ListItem><LinkText to  = "/projects">Projects</LinkText></ListItem>
-                    <ListItem><LinkText to  = "/gallery">Gallery</LinkText></ListItem>
+                    <ListItem><LinkText href = "/">Home</LinkText></ListItem>
+                    <ListItem><LinkText href = "/work-experience">Work Experience</LinkText></ListItem>
+                    <ListItem><LinkText href = "/campus-involvement">Campus Involvement</LinkText></ListItem>
+                    <ListItem><LinkText href  = "/projects">Projects</LinkText></ListItem>
+                    <ListItem><LinkText href  = "/gallery">Gallery</LinkText></ListItem>
                 </ListWrapper>
             </NavWrapper>
     )
