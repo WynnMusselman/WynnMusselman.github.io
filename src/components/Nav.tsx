@@ -36,17 +36,21 @@ const LinkText = styled.a`
 `
 
 
+
 function Nav() {
     return(
         <NavWrapper>
-                <ListWrapper>
-                    <ListItem><LinkText href = "/">Home</LinkText></ListItem>
-                    <ListItem><LinkText href = "/work-experience">Work Experience</LinkText></ListItem>
-                    <ListItem><LinkText href = "/campus-involvement">Campus Involvement</LinkText></ListItem>
-                    <ListItem><LinkText href  = "/projects">Projects</LinkText></ListItem>
-                    <ListItem><LinkText href  = "/gallery">Gallery</LinkText></ListItem>
-                </ListWrapper>
-            </NavWrapper>
+            <ListWrapper>
+                <ListItem><LinkText href = "/">Home</LinkText></ListItem>
+                <ListItem><LinkText href = "/work-experience">Work Experience</LinkText></ListItem>
+                <ListItem><LinkText href = "/campus-involvement">Campus Involvement</LinkText></ListItem>
+                <ListItem><LinkText href  = "/projects">Projects</LinkText></ListItem>
+                <ListItem><LinkText href  = "/gallery">Gallery</LinkText></ListItem>
+            </ListWrapper>
+
+           
+
+         </NavWrapper>
     )
 }
 

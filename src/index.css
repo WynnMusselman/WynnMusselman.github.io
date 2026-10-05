@@ -34,7 +34,8 @@ h3{
 
 h4{
     font: calc(2px + 1.4vw) monospace;
-    color: white
+    color: #549555;
+    margin: 1%;
 }
 
 p{
@@ -186,8 +187,33 @@ main{
 .work-experience h4{
     text-align: center;
     margin-bottom: 2%;
-    color: #549555;
 }
+
+
+/* campus involvement */
+
+.campus-experience{
+    margin: 5% 0;
+    border-left: 4px solid #549555;
+    padding: 3%;
+}
+
+.campus-experience h3{
+    color: greenyellow;
+}
+
+.experience-item{
+    /* border-left: 4px solid #549555;
+    padding: 2%; */
+    margin: 4% 0;
+   
+}
+
+.experience-item p{
+    text-align: left;
+    padding: 2% 0 ;
+}
+
 
 
 
