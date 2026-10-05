@@ -23,7 +23,7 @@ const ListItem = styled.li`
     padding: 2%;
 `;
 
-const LinkText = styled.a`
+const LinkText = styled(Link)`
     opacity: 100%;
     color: #68CDFE;
     font: calc(2px + 1.5vw) monospace;
