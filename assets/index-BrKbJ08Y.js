@@ -25,7 +25,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
     display: inline;
     list-style: none;
     padding: 2%;
-`,Ja=Ua.a`
+`,Ja=Ua(Pn)`
     opacity: 100%;
     color: #68CDFE;
     font: calc(2px + 1.5vw) monospace;
@@ -35,7 +35,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
         font-style: italic;
         font-weight: bold;
     }
-`;function Ya(){let e=(0,Gn.c)(5),t;e[0]===Symbol.for(`react.memo_cache_sentinel`)?(t=(0,R.jsx)(qa,{children:(0,R.jsx)(Ja,{href:`/`,children:`Home`})}),e[0]=t):t=e[0];let n;e[1]===Symbol.for(`react.memo_cache_sentinel`)?(n=(0,R.jsx)(qa,{children:(0,R.jsx)(Ja,{href:`/work-experience`,children:`Work Experience`})}),e[1]=n):n=e[1];let r;e[2]===Symbol.for(`react.memo_cache_sentinel`)?(r=(0,R.jsx)(qa,{children:(0,R.jsx)(Ja,{href:`/campus-involvement`,children:`Campus Involvement`})}),e[2]=r):r=e[2];let i;e[3]===Symbol.for(`react.memo_cache_sentinel`)?(i=(0,R.jsx)(qa,{children:(0,R.jsx)(Ja,{href:`/projects`,children:`Projects`})}),e[3]=i):i=e[3];let a;return e[4]===Symbol.for(`react.memo_cache_sentinel`)?(a=(0,R.jsx)(Ga,{children:(0,R.jsxs)(Ka,{children:[t,n,r,i,(0,R.jsx)(qa,{children:(0,R.jsx)(Ja,{href:`/gallery`,children:`Gallery`})})]})}),e[4]=a):a=e[4],a}var Xa=Ua.footer`
+`;function Ya(){let e=(0,Gn.c)(5),t;e[0]===Symbol.for(`react.memo_cache_sentinel`)?(t=(0,R.jsx)(qa,{children:(0,R.jsx)(Ja,{to:`/`,children:`Home`})}),e[0]=t):t=e[0];let n;e[1]===Symbol.for(`react.memo_cache_sentinel`)?(n=(0,R.jsx)(qa,{children:(0,R.jsx)(Ja,{to:`/work-experience`,children:`Work Experience`})}),e[1]=n):n=e[1];let r;e[2]===Symbol.for(`react.memo_cache_sentinel`)?(r=(0,R.jsx)(qa,{children:(0,R.jsx)(Ja,{to:`/campus-involvement`,children:`Campus Involvement`})}),e[2]=r):r=e[2];let i;e[3]===Symbol.for(`react.memo_cache_sentinel`)?(i=(0,R.jsx)(qa,{children:(0,R.jsx)(Ja,{to:`/projects`,children:`Projects`})}),e[3]=i):i=e[3];let a;return e[4]===Symbol.for(`react.memo_cache_sentinel`)?(a=(0,R.jsx)(Ga,{children:(0,R.jsxs)(Ka,{children:[t,n,r,i,(0,R.jsx)(qa,{children:(0,R.jsx)(Ja,{to:`/gallery`,children:`Gallery`})})]})}),e[4]=a):a=e[4],a}var Xa=Ua.footer`
     padding: 1%;
     margin-top: 1%;
     background-color: #181818;
