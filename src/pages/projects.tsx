@@ -23,14 +23,14 @@ function WorkExperience(){
                     <h4>September 2026 - Present | TypeScript, React, Vite</h4>
                     <p>
                         I have been learning and teaching web development skills for awhile, so 
-                        I thought I'd finally create my own website. It's still a work in progress, 
+                        I thought I'd finally create my own personal portfolio. It's still a work in progress, 
                         but I hope you've liked it so far! One of the most challenging aspect of the 
                         site's creation has been the design. I wanted to do something fun and creative, 
                         so I took some inspiration from VSCode and decided to borrow its color palette. 
                     </p>
                     <p>
                         As I continue to improve my web development and design skills, I will keep
-                        making additions to the site and improve it. It has been a lot of fun to 
+                        making additions to the site. It has been a lot of fun to 
                         create so far :)
                     </p>
                 </div>
@@ -38,7 +38,7 @@ function WorkExperience(){
 
                 {/* fencing */}
                 <div className = "project-section">
-                    <h3><a href = "https://github.com/WynnMusselman/OnGuard-Ready-Fence">On Guard... Ready? Fencer</a></h3>
+                    <h3><a href = "https://github.com/WynnMusselman/OnGuard-Ready-Fence">On Guard... Ready? Fence!</a></h3>
                     <h4>November 2025 - September 2026 | HTML, CSS, JavaScript</h4>
                     <p>
                         In high school, I was the president of my school's fencing club. As president, 
@@ -99,6 +99,10 @@ function WorkExperience(){
                 <div className = "project-section">
                     <h3><a href = "https://github.com/WynnMusselman/MyJavaPiano">My Java Piano</a></h3>
                     <h4>November 2025 | Java, Krita</h4>
+                    <p>
+                        I created a desktop app that allows you to play piano! There are also buttons that 
+                        play music or sound effects.
+                    </p>
                     <p>
                         My Java Piano was made entirely in vanilla Java with original artwork. I used
                         a Java Swing framework to incorporate the visual features. 

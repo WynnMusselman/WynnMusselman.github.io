@@ -28,8 +28,15 @@ function CampusInvolvement(){
                             HTML, CSS, and Javascript to BU students. I collaborate with 
                             fellow JDT leads on lesson plans to ensure information is accurate 
                             and presented in the most comprehensive way. Lessons 
-                            are presented in a live coding where I code the website from 
+                            are presented in a live coding format where I code the website from 
                             scratch as students follow along and ask questions.
+                        </p>
+                        <p>
+                            I really enjoy developing fun website as well as teaching, so I am
+                            so glad that I get to combine both as a JDT lead for Hack4Impact! 
+                            A lot of the students who join the club have never made a website before 
+                            and some aren't even Computer Science majors, so I get to teach them how
+                            to develop their first ever site.
                         </p>
                     </div>
                 </div>
@@ -62,6 +69,18 @@ function CampusInvolvement(){
                         </p>
                     </div>
 
+                    {/* Ignite */}
+                    <div className = "experience-item">
+                        <h4><b>Ignite Council Representative</b> | April 2026 - Present</h4>
+                        <p>
+                            On top of my role as an e-board member, I also represent Girls Who Code 
+                            at Ignite Council meetings. The Ignite Student Council consists of 
+                            student leaders from tech-focused clubs on campus. As a member, I help
+                            GWC gain funding, increase outreach, and recruit. Additionally, I 
+                            collaborate with other clubs on events or help with their funding requests.
+                        </p>
+                    </div>
+
                     {/* Facilitator */}
                     <div className = "experience-item">
                         <h4><b>Bytes Facilitator</b> | October 2025 - November 2025</h4>
@@ -91,7 +110,7 @@ function CampusInvolvement(){
                             the club was developing together. 
                         </p>
                         <p>
-                            Using the skills I gained as a member of the club, I have begun making some of my
+                            Using the skills I gained as a member of the club, I have made some of my
                             own video games using Godot, Python, and Java.
                         </p>
                     </div>

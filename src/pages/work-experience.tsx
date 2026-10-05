@@ -131,7 +131,7 @@ function WorkExperience(){
                                 internship had to be scrapped. Nonetheless, I coordinated closely with director
                                 of EL Connector to work within the limitations. I increased the BU branding on 
                                 the site by incorporating BU's colors wherever possible, I made descriptions of 
-                                programs offed more concise, and updated site information to be accurate.
+                                programs offered more concise, and updated site information to be accurate.
                             </p>
                         </div>
                     </div>
@@ -184,7 +184,7 @@ function WorkExperience(){
                     <div className = "multi-col">
                         <div className = "small-inner-col">
                             <img src = {simcoachImg} alt = "me creating a video game"/>
-                            <p className = "caption">My first time making a game!</p>
+                            <p className = "caption">Making my first game at Simcoach</p>
                             {/* <p className = "caption">Pittsburgh, PA ⋄ June 2023 - July 2023</p> */}
                         </div>
 
