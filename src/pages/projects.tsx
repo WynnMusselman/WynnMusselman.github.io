@@ -1,7 +1,6 @@
 // import { useMemo } from 'react';
 
 import Nav from '../components/Nav.tsx';
-import HamburgerNav from '../components/HamburgerNav.tsx';
 import Footer from '../components/Footer.tsx';
 import Header from '../components/Header.tsx';
 
@@ -9,7 +8,7 @@ function WorkExperience(){
     return(
         <>
             {/* Nav bar */}
-            <HamburgerNav/>
+            <Nav/>
 
             {/* header */}
             <Header/>

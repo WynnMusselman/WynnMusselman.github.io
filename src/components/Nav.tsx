@@ -1,26 +1,58 @@
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import styled from "styled-components";
 
+// const LINKS = [
+//     { to: '/', label: 'Home' },
+//     { to: "/work-experience", label: 'Work Experience' },
+//     { to: "/campus-involvement", label: 'Campus Involvement' },
+//     { to: '/projects', label: 'Projects' },
+//     { to: '/gallery', label: 'Gallery' },
+// ];
 
-const NavWrapper = styled.nav `
-    background-color: rgba(31, 31, 31, 0.5);
+
+const NavWrapper = styled.nav<{ $open: boolean }> `
+    background-color: rgba(24, 24, 24, 0.5);
     padding: 2%;
 
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 11;
+    z-index: 10;
+
+    @media screen and (max-width: 750px){
+
+        // display only if user clicks button
+        display: ${
+            props => (
+                props.$open 
+                ?
+                'flex'
+                :
+                'none'
+            )
+        };
+
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 100%;
+        background-color: rgba(24, 24, 24, 0.95);
+    }
 `;
 
 const ListWrapper = styled.ul `
     text-align: center;
-    padding-left: 0;
 `;
 
 const ListItem = styled.li`
     display: inline;
     list-style: none;
     padding: 2%;
+
+    @media screen and (max-width: 750px){
+        display: block;
+        padding: 10%;
+    }
 `;
 
 const LinkText = styled(Link)`
@@ -33,24 +65,78 @@ const LinkText = styled(Link)`
         font-style: italic;
         font-weight: bold;
     }
+
+    @media screen and (max-width: 750px){
+        font: calc(2px + 4vw) monospace;
+        margin: 4%;
+    }
 `
+
+// button
+const ButtonWrapper = styled.section`
+    display: none;
+
+    width: 100%;
+    background-color: rgba(24, 24, 24, 0.9);
+
+    position: fixed;
+    left: 0;
+    top: 0;
+    text-align: left;
+    z-index: 11;
+
+    @media screen and (max-width: 750px){
+        display: block;
+    }
+`;
+
+
+const Button = styled.button`
+    // button styling
+    background-color: transparent;
+    border: none;
+    color: white;
+    font: bold calc(2px + 4vw) monospace;
+    padding: 1%;
+`;
 
 
 
 function Nav() {
+
+    const [isOpen, setIsOpen] = useState(false);
+    
+    function openHamburger(){
+        setIsOpen(!isOpen);
+    }
+
+
     return(
-        <NavWrapper>
-            <ListWrapper>
-                <ListItem><LinkText to = "/">Home</LinkText></ListItem>
-                <ListItem><LinkText to = "/work-experience">Work Experience</LinkText></ListItem>
-                <ListItem><LinkText to = "/campus-involvement">Campus Involvement</LinkText></ListItem>
-                <ListItem><LinkText to  = "/projects">Projects</LinkText></ListItem>
-                <ListItem><LinkText to  = "/gallery">Gallery</LinkText></ListItem>
-            </ListWrapper>
+        <>
+            <ButtonWrapper>
+                {/* if the menu is open, have X, otherwise, O */}
+                <Button onClick = {openHamburger}>
+                    {
+                        isOpen
+                        ?
+                        'X'
+                        :
+                        '☰'
+                    }
+                </Button>
+            </ButtonWrapper>
 
-           
 
-         </NavWrapper>
+            <NavWrapper $open = {isOpen}>
+                <ListWrapper>
+                    <ListItem><LinkText to = "/">Home</LinkText></ListItem>
+                    <ListItem><LinkText to = "/work-experience">Work Experience</LinkText></ListItem>
+                    <ListItem><LinkText to = "/campus-involvement">Campus Involvement</LinkText></ListItem>
+                    <ListItem><LinkText to  = "/projects">Projects</LinkText></ListItem>
+                    <ListItem><LinkText to  = "/gallery">Gallery</LinkText></ListItem>
+                </ListWrapper>
+            </NavWrapper>
+        </>
     )
 }
 
