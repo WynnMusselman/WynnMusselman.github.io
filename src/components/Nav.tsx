@@ -14,7 +14,7 @@ const NavWrapper = styled.nav `
 
 const ListWrapper = styled.ul `
     text-align: center;
-    padding-left: none;
+    padding-left: 0;
 `;
 
 const ListItem = styled.li`

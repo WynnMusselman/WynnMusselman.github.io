@@ -4,7 +4,7 @@ import styled from 'styled-components';
 const FooterWrapper = styled.footer`
     padding: 1%;
     margin-top: 1%;
-    background-color: #181818;
+    background-color: rgb(24, 24, 24);
 `;
 
 const FooterText = styled.p`
