@@ -2,15 +2,6 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import styled from "styled-components";
 
-// const LINKS = [
-//     { to: '/', label: 'Home' },
-//     { to: "/work-experience", label: 'Work Experience' },
-//     { to: "/campus-involvement", label: 'Campus Involvement' },
-//     { to: '/projects', label: 'Projects' },
-//     { to: '/gallery', label: 'Gallery' },
-// ];
-
-
 const NavWrapper = styled.nav<{ $open: boolean }> `
     background-color: rgba(24, 24, 24, 0.5);
     padding: 2%;
@@ -67,7 +58,7 @@ const LinkText = styled(Link)`
     }
 
     @media screen and (max-width: 750px){
-        font: calc(2px + 4vw) monospace;
+        font: calc(2px + 5vw) monospace;
         margin: 4%;
     }
 `
@@ -96,7 +87,7 @@ const Button = styled.button`
     background-color: transparent;
     border: none;
     color: white;
-    font: bold calc(2px + 4vw) monospace;
+    font: bold calc(2px + 8vw) monospace;
     padding: 1%;
 `;
 

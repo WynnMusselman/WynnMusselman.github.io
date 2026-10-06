@@ -10,6 +10,10 @@ const FooterWrapper = styled.footer`
 const FooterText = styled.p`
     color: rgb(9, 181, 181);
     font: calc(2px + 1vw) monospace;
+
+    @media screen and (max-width: 750px){
+        font-size: calc(2px + 1.5vw);
+    }
 `
 
 function Footer(){
