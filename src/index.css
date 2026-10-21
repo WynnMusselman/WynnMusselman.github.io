@@ -97,37 +97,6 @@ main{
     padding-top: 0;
 }
 
-/* for gallery */
-#gallery{
-    margin: 5% 0;
-}
-
-
-.multi-col .img-layout{
-    display: flex;
-    flex-direction: column;
-    margin: 3%;
-    text-align: center;
-
-    width: 50%;
-
-    /* fade in animation on each row of images */
-    animation: fadeIn;
-    animation-timeline: view();
-}
-
-.multi-col .img-layout img{
-    /* max-width: 20vw; */
-
-    width: 100%;
-	height: 100%;
-	object-fit: contain;
-}
-
-
-.multi-col .img-layout .caption{
-    text-align: center;
-}
 
 
 /* projects */

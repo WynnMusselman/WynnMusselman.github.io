@@ -9,6 +9,7 @@ import Footer from "./components/Footer.tsx";
 import Home from "./components/mains/home.tsx";
 import CampusInvolvement from "./components/mains/campus-involvement.tsx";
 import WorkExperience from "./components/mains/projects.tsx";
+import Gallery from "./components/mains/gallery.tsx";
 
 
 export default function Root(){
@@ -21,6 +22,7 @@ export default function Root(){
                 <Route path = {"/"} element = {<Home />}/>
                 <Route path = {"/WorkExperience"} element = {<WorkExperience />}/>
                 <Route path = {"/CampusInvolvement"} element = {<CampusInvolvement />}/>
+                <Route path = {"/Gallery"} element = {<Gallery />}/>
             </Routes>
 
             <Footer />

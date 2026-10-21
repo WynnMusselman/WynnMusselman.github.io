@@ -1,19 +1,8 @@
-// import { useMemo } from 'react';
-
-import Nav from '../Nav.tsx';
-import Footer from '../Footer.tsx';
-import Header from '../Header.tsx';
+import styled from "styled-components"
 
 function WorkExperience(){
     return(
         <>
-            {/* Nav bar */}
-            <Nav/>
-
-            {/* header */}
-            <Header/>
-
-            {/* main */}
             <main>
                 <h2>&lt;h2&gt; Projects &lt;/h2&gt;</h2>
 

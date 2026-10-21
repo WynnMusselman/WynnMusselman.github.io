@@ -1,6 +1,4 @@
-import Nav from '../Nav.tsx';
-import Footer from '../Footer.tsx';
-import Header from '../Header.tsx';
+import styled from 'styled-components';
 
 import hackathonImg from '../../assets/hackathon-dsx.jpeg';
 import pizzaImg from '../../assets/pizza.jpg';
@@ -12,18 +10,43 @@ import cntImg from '../../assets/code-and-tell.jpeg';
 import bnbImg from '../../assets/BnB.jpg';
 import gameDevImg from '../../assets/game-dev.jpg';
 
+/* for gallery */
+const GalleryStyle = styled.div `
+    margin: 5% 0;
+`
+    
+const GalleryItem = styled.div`
+    display: flex;
+    flex-direction: column;
+    margin: 3%;
+    text-align: center;
+
+    width: 50%;
+
+    /* fade in animation on each row of images */
+    animation: fadeIn;
+    //animation-timeline: view();
+`
+
+const GalleryImage = styled.img `
+    /* max-width: 20vw; */
+
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+`
 
 
-function Gallery(){
+const ImageCaption = styled.p`
+    color: greenyellow;
+    font: calc(2px + 1.4vw) monospace;
+    text-align: center;
+    padding-top: 0;
+`
+
+export default function Gallery(){
     return(
         <>
-            {/* nav */}
-            <Nav/>
-
-            {/* header */}
-            <Header />
-
-            {/* main */}
             <main>
                 <h2>&lt;h2&gt; Gallery &lt;/h2&gt;</h2>
                 <p className = "caption">&lt;p&gt; Check out some photos that are important to me! &lt;/p&gt;</p>
@@ -31,69 +54,65 @@ function Gallery(){
 
                 {/* first row */}
 
-                <div id = "gallery">
+                <GalleryStyle>
                     <div className = "multi-col">
-                        <div className = "img-layout">
-                            <img src = {cntImg} alt = "presenting my game"/>
-                            <p className = "caption">Presenting a project I made at Code and Tell</p>
-                        </div>
+                        <GalleryItem>
+                            <GalleryImage src = {cntImg} alt = "presenting my game"/>
+                            <ImageCaption>Presenting a project I made at Code and Tell</ImageCaption>
+                        </GalleryItem>
 
-                        <div className = "img-layout">
-                            <img src = {hockeyImg} alt = "hockey game with a friend"/>
-                            <p className = "caption">BU hockey game!</p>
-                        </div>
+                        <GalleryItem>
+                            <GalleryImage src = {hockeyImg} alt = "hockey game with a friend"/>
+                            <ImageCaption>BU hockey game!</ImageCaption>
+                        </GalleryItem>
 
-                        <div className = "img-layout">
-                            <img src = {hackathonImg} alt = "DS+X Hackathon Presentation"/>
-                            <p className = "caption">Me presenting my team's project at the DS+X hackathon</p>
-                        </div>
+                        <GalleryItem>
+                            <GalleryImage src = {hackathonImg} alt = "DS+X Hackathon Presentation"/>
+                            <ImageCaption>Me presenting my team's project at the DS+X hackathon</ImageCaption>
+                        </GalleryItem>
                     </div>
 
 
                     {/* second row */}
                     <div className = "multi-col">
-                        <div className = "img-layout">
-                            <img src = {marmonImg} alt = "Rhett the BU mascot at the Boston Marathon"/>
-                            <p className = "caption">My first marathon monday</p>
-                        </div>
+                        <GalleryItem>
+                            <GalleryImage src = {marmonImg} alt = "Rhett the BU mascot at the Boston Marathon"/>
+                            <ImageCaption>My first marathon monday</ImageCaption>
+                        </GalleryItem>
 
-                        <div className = "img-layout">
-                            <img src = {pizzaImg} alt = "a small pizza"/>
-                            <p className = "caption">A pizza I made at Pizza IQ</p>
-                        </div>
+                        <GalleryItem>
+                            <GalleryImage src = {pizzaImg} alt = "a small pizza"/>
+                            <ImageCaption>A pizza I made at Pizza IQ</ImageCaption>
+                        </GalleryItem>
 
-                        <div className = "img-layout">
-                            <img src = {parisImg} alt = "looking at the eiffel tower at night"/>
-                            <p className = "caption">My last night of study abroad in Paris</p>
-                        </div>
+                        <GalleryItem>
+                            <GalleryImage src = {parisImg} alt = "looking at the eiffel tower at night"/>
+                            <ImageCaption>My last night of study abroad in Paris</ImageCaption>
+                        </GalleryItem>
                     </div>
 
 
                     {/* third row */}
                     <div className = "multi-col">
-                        <div className = "img-layout">
-                            <img src = {piratesImg} alt = "bobble head I got at a baseball game"/>
-                            <p className = "caption">I got a Dr. Robby bobble head at a Pirates game!!</p>
-                        </div>
+                        <GalleryItem>
+                            <GalleryImage src = {piratesImg} alt = "bobble head I got at a baseball game"/>
+                            <ImageCaption>I got a Dr. Robby bobble head at a Pirates game!!</ImageCaption>
+                        </GalleryItem>
 
-                        <div className = "img-layout">
-                            <img src = {bnbImg} alt = "Presenting Bits & Bytes"/>
-                            <p className = "caption">Promoting our free coding lessons to students</p>
-                        </div>
+                        <GalleryItem>
+                            <GalleryImage src = {bnbImg} alt = "Presenting Bits & Bytes"/>
+                            <ImageCaption>Promoting our free coding lessons to students</ImageCaption>
+                        </GalleryItem>
 
-                        <div className = "img-layout">
-                            <img src = {gameDevImg} alt = "teaching game development"/>
-                            <p className = "caption">Teaching a game development workshop to Girls Who Code members</p>
-                        </div>
+                        <GalleryItem>
+                            <GalleryImage src = {gameDevImg} alt = "teaching game development"/>
+                            <ImageCaption>Teaching a game development workshop to Girls Who Code members</ImageCaption>
+                        </GalleryItem>
                     </div>
-                </div>
+                </GalleryStyle>
 
             </main>
-
-            {/* footer */}
-            <Footer/>
         </>
     )
 }
 
-export default Gallery;
