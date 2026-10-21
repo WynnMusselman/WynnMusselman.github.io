@@ -1,16 +1,16 @@
-import Nav from '../components/Nav.tsx';
-import Footer from '../components/Footer.tsx';
-import Header from '../components/Header.tsx';
+import Nav from '../Nav.tsx';
+import Footer from '../Footer.tsx';
+import Header from '../Header.tsx';
 
-import hackathonImg from '../assets/hackathon-dsx.jpeg';
-import pizzaImg from '../assets/pizza.jpg';
-import hockeyImg from '../assets/hockey.jpg'
-import marmonImg from '../assets/marmon.jpg';
-import parisImg from '../assets/paris.jpg';
-import piratesImg from '../assets/pirates-game.jpg';
-import cntImg from '../assets/code-and-tell.jpeg';
-import bnbImg from '../assets/BnB.jpg';
-import gameDevImg from '../assets/game-dev.jpg';
+import hackathonImg from '../../assets/hackathon-dsx.jpeg';
+import pizzaImg from '../../assets/pizza.jpg';
+import hockeyImg from '../../assets/hockey.jpg'
+import marmonImg from '../../assets/marmon.jpg';
+import parisImg from '../../assets/paris.jpg';
+import piratesImg from '../../assets/pirates-game.jpg';
+import cntImg from '../../assets/code-and-tell.jpeg';
+import bnbImg from '../../assets/BnB.jpg';
+import gameDevImg from '../../assets/game-dev.jpg';
 
 
 

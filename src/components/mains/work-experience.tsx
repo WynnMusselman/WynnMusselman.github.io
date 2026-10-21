@@ -1,14 +1,14 @@
 // import { useMemo } from 'react';
 
-import Nav from '../components/Nav.tsx';
-import Footer from '../components/Footer.tsx';
-import Header from '../components/Header.tsx';
+import Nav from '../Nav.tsx';
+import Footer from '../Footer.tsx';
+import Header from '../Header.tsx';
 
-import simcoachImg from '../assets/simcoach-games.jpg';
-import pizzaIQImg from '../assets/pizza-iq.jpeg';
-import elConnectorIMG from '../assets/el-connector-homepage.png';
-import dynseoImg from '../assets/dynseo-metro-view.jpg';
-import sparkIMG from '../assets/CDS-building.jpg';
+import simcoachImg from '../../assets/simcoach-games.jpg';
+import pizzaIQImg from '../../assets/pizza-iq.jpeg';
+import elConnectorIMG from '../../assets/el-connector-homepage.png';
+import dynseoImg from '../../assets/dynseo-metro-view.jpg';
+import sparkIMG from '../../assets/CDS-building.jpg';
 
 function WorkExperience(){
     return(

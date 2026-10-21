@@ -1,8 +1,8 @@
 // import { useMemo } from 'react';
 
-import Nav from '../components/Nav.tsx';
-import Footer from '../components/Footer.tsx';
-import Header from '../components/Header.tsx';
+import Nav from '../Nav.tsx';
+import Footer from '../Footer.tsx';
+import Header from '../Header.tsx';
 
 function WorkExperience(){
     return(

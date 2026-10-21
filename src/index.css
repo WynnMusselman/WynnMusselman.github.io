@@ -50,39 +50,6 @@ p{
     padding-top: 0;
 }
 
-/* binary and hello world header*/
-
-#binary-header{
-    margin-top: 0;
-    position: relative;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    /* centering text */
-    justify-content: center;  /* horizontal */
-    align-items: center;      /* vertical */
-
-    /* z-index: 10; */
-}
-
-
-/* binary numbers */
-#binary-wrapper{
-    /* position: relative; */
-    position: absolute;
-    opacity: 25%;
-    z-index: -1;
-    
-}
-
-.binary-line{
-    animation: scroll 10s linear infinite;
-    /* position: absolute; */
-    white-space: nowrap;
-    font: calc(2px + 5vw) monospace;
-    animation-delay: -50s;
-}
-
 
 /* more info when you scroll down */
 main{
@@ -92,12 +59,6 @@ main{
     width: 90%;
 
     min-height: 100vh;
-}
-
-#home-page{
-    /* fade in animation on home page main content */
-    animation: fadeIn;
-    animation-timeline: view();
 }
 
 /* for multi column layout */
