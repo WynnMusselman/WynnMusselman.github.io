@@ -16,9 +16,10 @@ const ExperienceTitle = styled.h3`
 const ExperienceItem = styled.div`
     padding: 2%; 
     margin: 4% 0;
+    border-left: 4px solid #549555;
 `
 
-const ExperienceDescription = styled.p`
+const ExperienceDescription = styled.div`
     text-align: left;
     padding: 2% 0 ;
 `
@@ -29,9 +30,10 @@ export default function CampusInvolvement(){
             <h2>&lt;h2&gt; Campus Involvement &lt;/h2&gt;</h2>
 
             {/* H4I */}
-            <div className = "campus-experience">
+            <ExperienceItem>
                 <ExperienceTitle>Hack4Impact</ExperienceTitle>
-                <div className = "experience-item">
+
+                <ExperienceDescription>
                     <h4><b>Junior Development Team Lead</b> | January 2026 - Present</h4>
                     <p>
                         As a junior development team lead for Boston University’s
@@ -49,15 +51,15 @@ export default function CampusInvolvement(){
                         and some aren't even Computer Science majors, so I get to teach them how
                         to develop their first ever site.
                     </p>
-                </div>
-            </div>
+                </ExperienceDescription>
+            </ExperienceItem>
 
             {/* GWC */}
-            <div className = "campus-experience">
+            <ExperienceItem>
                 <ExperienceTitle>Girls Who Code</ExperienceTitle>
 
                 {/* Bytes */}
-                <div className = "experience-item">
+                <ExperienceDescription>
                     <h4><b>Bytes Lead</b> | January 2026 - Present</h4>
                     <p>
                         I lead the Bytes program for Bits and Bytes at Boston University’s Girls
@@ -78,10 +80,10 @@ export default function CampusInvolvement(){
                         member of the GWC eboard and the president of the Game Development Club at
                         BU.
                     </p>
-                </div>
+                </ExperienceDescription>
 
                 {/* Ignite */}
-                <div className = "experience-item">
+                <ExperienceDescription>
                     <h4><b>Ignite Council Representative</b> | April 2026 - Present</h4>
                     <p>
                         On top of my role as an e-board member, I also represent Girls Who Code
@@ -90,10 +92,10 @@ export default function CampusInvolvement(){
                         GWC gain funding, increase outreach, and recruit. Additionally, I
                         collaborate with other clubs on events or help with their funding requests.
                     </p>
-                </div>
+                </ExperienceDescription>
 
                 {/* Facilitator */}
-                <div className = "experience-item">
+                <ExperienceDescription>
                     <h4><b>Bytes Facilitator</b> | October 2025 - November 2025</h4>
                     <p>
                         As a Bytes facilitator for Boston University's Girls Who Code program, I
@@ -103,15 +105,15 @@ export default function CampusInvolvement(){
                         my lessons to students while asking challenging questions and having them
                         follow along during live coding demonstrations to keep them engaged.
                     </p>
-                </div>
-            </div>
+                </ExperienceDescription>
+            </ExperienceItem>
 
 
 
             {/* Game Dev */}
-            <div className = "campus-experience">
+            <ExperienceItem>
                 <ExperienceTitle>Game Development Club</ExperienceTitle>
-                <div className = "experience-item">
+                <ExperienceDescription>
                     <h4><b>Member</b> | September 2025 - Present</h4>
                     <p>
                         As a member of the Game Development Club, I use game development
@@ -124,8 +126,8 @@ export default function CampusInvolvement(){
                         Using the skills I gained as a member of the club, I have made some of my
                         own video games using Godot, Python, and Java.
                     </p>
-                </div>
-            </div>
+                </ExperienceDescription>
+            </ExperienceItem>
 
 
         </CampusInvolvementWrapper>

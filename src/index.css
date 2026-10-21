@@ -130,27 +130,6 @@ main{
 }
 
 
-/* work experience */
-.work-experience{
-    margin: 6% 0;
-    animation: fadeIn;
-    animation-timeline: view();
-}
-
-.work-experience h3{
-    color: greenyellow;
-}
-
-.work-experience p{
-    text-align: left;
-}
-
-.work-experience h4{
-    text-align: center;
-    margin-bottom: 2%;
-}
-
-
 /* projects */
 .project-section{
     margin: 4% 0;
