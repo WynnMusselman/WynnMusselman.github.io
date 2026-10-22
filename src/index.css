@@ -98,33 +98,6 @@ main{
 }
 
 
-
-/* projects */
-.project-section{
-    margin: 4% 0;
-    padding: 3%;
-    border: 1px solid #549555;
-
-    animation: fadeIn;
-    animation-timeline: view();
-}
-
-.project-section a{
-    color: yellowgreen;
-    text-decoration: none;
-}
-
-.project-section a:hover{
-    text-decoration: underline;
-}
-
-.project-section p{
-    padding: 1% 0;
-    text-align: left;
-}
-
-
-
 /* animation */
 
 @keyframes scroll{
