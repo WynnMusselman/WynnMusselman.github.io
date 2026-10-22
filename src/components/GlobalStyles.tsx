@@ -47,13 +47,6 @@ const GlobalStyle = createGlobalStyle`
         font: calc(2px + 1.5vw) monospace;
     }
 
-    .caption{
-        color: greenyellow;
-        font: calc(2px + 1.4vw) monospace;
-        text-align: center;
-        padding-top: 0;
-    }
-
 
     /* more info when you scroll down */
     main{

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import {Caption} from "../styles/Caption.tsx"
 
 import simcoachImg from '../../assets/simcoach-games.jpg';
 import pizzaIQImg from '../../assets/pizza-iq.jpeg';
@@ -47,7 +48,7 @@ function WorkExperience(){
                         
                         <div className = "small-inner-col">
                             <img src = {sparkIMG} alt = "The jenga building in Boston"/>
-                            <p className = "caption">The building I get to work in!</p>
+                            <Caption>The building I get to work in!</Caption>
                         </div>
 
                         <div className = "big-inner-col">
@@ -115,8 +116,8 @@ function WorkExperience(){
 
                         <div className = "small-inner-col">
                             <img src = {dynseoImg} alt = "the eiffel tower"/>
-                            <p className = "caption">My view on my way to work everyday</p>
-                            {/* <p className = "caption">Cranberry Township, PA ⋄ June 2024 - Present</p> */}
+                            <Caption>My view on my way to work everyday</Caption>
+                            {/* <Caption>Cranberry Township, PA ⋄ June 2024 - Present</p> */}
                         </div>
                     </div>
                 </WorkItem>
@@ -133,7 +134,7 @@ function WorkExperience(){
                         
                         <div className = "small-inner-col">
                             <img src = {elConnectorIMG} alt = "homepage for CAS EL Connector"/>
-                            <p className = "caption">The homepage I redesigned</p>
+                            <Caption>The homepage I redesigned</Caption>
                         </div>
 
                         <div className = "big-inner-col">
@@ -181,8 +182,8 @@ function WorkExperience(){
 
                         <div className = "small-inner-col">
                             <img src = {pizzaIQImg} alt = "me wearing the Pizza IQ uniform"/>
-                            <p className = "caption">Trying on the uniform at my first shift</p>
-                            {/* <p className = "caption">Cranberry Township, PA ⋄ June 2024 - Present</p> */}
+                            <Caption>Trying on the uniform at my first shift</Caption>
+                            {/* <Caption>Cranberry Township, PA ⋄ June 2024 - Present</p> */}
                         </div>
                     </div>
                 </WorkItem>
@@ -198,8 +199,8 @@ function WorkExperience(){
                     <div className = "multi-col">
                         <div className = "small-inner-col">
                             <img src = {simcoachImg} alt = "me creating a video game"/>
-                            <p className = "caption">Making my first game at Simcoach</p>
-                            {/* <p className = "caption">Pittsburgh, PA ⋄ June 2023 - July 2023</p> */}
+                            <Caption>Making my first game at Simcoach</Caption>
+                            {/* <Caption>Pittsburgh, PA ⋄ June 2023 - July 2023</p> */}
                         </div>
 
                         <div className = "big-inner-col">

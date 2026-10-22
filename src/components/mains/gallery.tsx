@@ -1,4 +1,6 @@
 import styled from 'styled-components';
+import {Caption} from "../styles/Caption.tsx"
+
 
 import hackathonImg from '../../assets/hackathon-dsx.jpeg';
 import pizzaImg from '../../assets/pizza.jpg';
@@ -36,14 +38,6 @@ const GalleryImage = styled.img `
     object-fit: contain;
 `
 
-
-const ImageCaption = styled.p`
-    color: greenyellow;
-    font: calc(2px + 1.4vw) monospace;
-    text-align: center;
-    padding-top: 0;
-`
-
 export default function Gallery(){
     return(
         <>
@@ -60,17 +54,17 @@ export default function Gallery(){
                     <div className = "multi-col">
                         <GalleryItem>
                             <GalleryImage src = {cntImg} alt = "presenting my game"/>
-                            <ImageCaption>Presenting a project I made at Code and Tell</ImageCaption>
+                            <Caption>Presenting a project I made at Code and Tell</Caption>
                         </GalleryItem>
 
                         <GalleryItem>
                             <GalleryImage src = {hockeyImg} alt = "hockey game with a friend"/>
-                            <ImageCaption>BU hockey game!</ImageCaption>
+                            <Caption>BU hockey game!</Caption>
                         </GalleryItem>
 
                         <GalleryItem>
                             <GalleryImage src = {hackathonImg} alt = "DS+X Hackathon Presentation"/>
-                            <ImageCaption>Me presenting my team's project at the DS+X hackathon</ImageCaption>
+                            <Caption>Me presenting my team's project at the DS+X hackathon</Caption>
                         </GalleryItem>
                     </div>
 
@@ -79,17 +73,17 @@ export default function Gallery(){
                     <div className = "multi-col">
                         <GalleryItem>
                             <GalleryImage src = {marmonImg} alt = "Rhett the BU mascot at the Boston Marathon"/>
-                            <ImageCaption>My first marathon monday</ImageCaption>
+                            <Caption>My first marathon monday</Caption>
                         </GalleryItem>
 
                         <GalleryItem>
                             <GalleryImage src = {pizzaImg} alt = "a small pizza"/>
-                            <ImageCaption>A pizza I made at Pizza IQ</ImageCaption>
+                            <Caption>A pizza I made at Pizza IQ</Caption>
                         </GalleryItem>
 
                         <GalleryItem>
                             <GalleryImage src = {parisImg} alt = "looking at the eiffel tower at night"/>
-                            <ImageCaption>My last night of study abroad in Paris</ImageCaption>
+                            <Caption>My last night of study abroad in Paris</Caption>
                         </GalleryItem>
                     </div>
 
@@ -98,17 +92,17 @@ export default function Gallery(){
                     <div className = "multi-col">
                         <GalleryItem>
                             <GalleryImage src = {piratesImg} alt = "bobble head I got at a baseball game"/>
-                            <ImageCaption>I got a Dr. Robby bobble head at a Pirates game!!</ImageCaption>
+                            <Caption>I got a Dr. Robby bobble head at a Pirates game!!</Caption>
                         </GalleryItem>
 
                         <GalleryItem>
                             <GalleryImage src = {bnbImg} alt = "Presenting Bits & Bytes"/>
-                            <ImageCaption>Promoting our free coding lessons to students</ImageCaption>
+                            <Caption>Promoting our free coding lessons to students</Caption>
                         </GalleryItem>
 
                         <GalleryItem>
                             <GalleryImage src = {gameDevImg} alt = "teaching game development"/>
-                            <ImageCaption>Teaching a game development workshop to Girls Who Code members</ImageCaption>
+                            <Caption>Teaching a game development workshop to Girls Who Code members</Caption>
                         </GalleryItem>
                     </div>
                 </GalleryStyle>

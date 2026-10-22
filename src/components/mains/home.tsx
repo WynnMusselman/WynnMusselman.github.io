@@ -1,6 +1,8 @@
 import styled from "styled-components";
 import matchaImg from '../../assets/matcha-img-of-me.JPG';
 import BinaryHeader from "../../components/BinaryHeader";
+import {Caption} from "../styles/Caption.tsx"
+
 
 const HomeWrapper = styled.main `
     /* fade in animation on home page main content */
@@ -25,7 +27,7 @@ export default function Home(){
 
                     <div className = "small-inner-col">
                         <img src = {matchaImg} alt = "Wynn Musselman"/>
-                        <p className = "caption">↑ Picture of me with some matcha!</p>
+                        <Caption>↑ Picture of me with some matcha!</Caption>
 
                     </div>
 

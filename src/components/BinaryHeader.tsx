@@ -1,5 +1,6 @@
 import { useMemo } from 'react';
 import styled from "styled-components";
+import {Caption} from "./styles/Caption.tsx"
 
 
 // styles
@@ -78,7 +79,7 @@ export default function BinaryHeader(){
 
                 {/* intro text */}
                 <h1>&lt;h1&gt; Hello World, I'm Wynn! &lt;/h1&gt;</h1>
-                <p className = "caption">&lt;p&gt; <i>Thanks for visiting my site :]</i> &lt;/p&gt;</p>
+                <Caption>&lt;p&gt; <i>Thanks for visiting my site :]</i> &lt;/p&gt;</Caption>
             </BinaryHeaderContainer>
         </>
     )};

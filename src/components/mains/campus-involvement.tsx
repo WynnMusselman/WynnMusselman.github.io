@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 const CampusInvolvementWrapper = styled.div`
     margin: 5% 0;
-    border-left: 4px solid #549555;
     padding: 3%;
 
     animation: fadeIn;
