@@ -32,7 +32,7 @@ export default function Projects(){
 
                 {/* website */}
                 <ProjectItem>
-                    <h3><ProjectLink href = "https://github.com/WynnMusselman/WynnMusselman.github.io">My Personal Website</a></h3>
+                    <h3><ProjectLink href = "https://github.com/WynnMusselman/WynnMusselman.github.io">My Personal Website</ProjectLink></h3>
                     <h4>September 2026 - Present | TypeScript, React, Vite</h4>
                     <ProjectDescription>
                         I have been learning and teaching web development skills for awhile, so 
@@ -51,7 +51,7 @@ export default function Projects(){
 
                 {/* fencing */}
                 <ProjectItem>
-                    <h3><ProjectLink href = "https://github.com/WynnMusselman/OnGuard-Ready-Fence">On Guard... Ready? Fence!</a></h3>
+                    <h3><ProjectLink href = "https://github.com/WynnMusselman/OnGuard-Ready-Fence">On Guard... Ready? Fence!</ProjectLink></h3>
                     <h4>November 2025 - September 2026 | HTML, CSS, JavaScript</h4>
                     <ProjectDescription>
                         In high school, I was the president of my school's fencing club. As president, 
@@ -73,7 +73,7 @@ export default function Projects(){
 
                 {/* math club */}
                 <ProjectItem>
-                    <h3><ProjectLink href = "https://github.com/WynnMusselman/Society-of-Math-Club">Society of Math Club</a></h3>
+                    <h3><ProjectLink href = "https://github.com/WynnMusselman/Society-of-Math-Club">Society of Math Club</ProjectLink></h3>
                     <h4>August 2026 - September 2026 | HTML, CSS</h4>
                     <ProjectDescription>
                         The Society of Math Club's website was initially created by someone who did not know
@@ -92,7 +92,7 @@ export default function Projects(){
 
                 {/* monkeys game */}
                 <ProjectItem>
-                    <h3><ProjectLink href = "https://github.com/WynnMusselman/Monkeys-Jumping-on-the-Bed-Simulator">Monkeys Jumping on the Bed Simulator</a></h3>
+                    <h3><ProjectLink href = "https://github.com/WynnMusselman/Monkeys-Jumping-on-the-Bed-Simulator">Monkeys Jumping on the Bed Simulator</ProjectLink></h3>
                     <h4>July 2026 - August 2026 | Godot, GDScript, Asesprite</h4>
                     <ProjectDescription>
                         I created a game based around the idea of monkeys jumping on the bed using Godot. 
@@ -110,7 +110,7 @@ export default function Projects(){
 
                 {/* piano */}
                 <ProjectItem>
-                    <h3><ProjectLink href = "https://github.com/WynnMusselman/MyJavaPiano">My Java Piano</a></h3>
+                    <h3><ProjectLink href = "https://github.com/WynnMusselman/MyJavaPiano">My Java Piano</ProjectLink></h3>
                     <h4>November 2025 | Java, Krita</h4>
                     <ProjectDescription>
                         I created a desktop app that allows you to play piano! There are also buttons that 
@@ -126,7 +126,7 @@ export default function Projects(){
 
                 {/* piano */}
                 <ProjectItem>
-                    <h3><ProjectLink href = "https://github.com/WynnMusselman/LetsDressUp">Let's Dress Up</a></h3>
+                    <h3><ProjectLink href = "https://github.com/WynnMusselman/LetsDressUp">Let's Dress Up</ProjectLink></h3>
                     <h4>August 2025 | Java, Krita</h4>
                     <ProjectDescription>
                         Let's Dress Up was one of the first video games I made on my own. I decided that,
@@ -137,7 +137,7 @@ export default function Projects(){
                         background audio, and event listeners for changed in game state.
                     </ProjectDescription>
                     <ProjectDescription>
-                        I presented this game at <ProjectLink href = "https://www.bu.edu/cds-faculty/2025/12/12/code-tell-showcase/">Spark!'s Code & Tell</a> in
+                        I presented this game at <ProjectLink href = "https://www.bu.edu/cds-faculty/2025/12/12/code-tell-showcase/">Spark!'s Code & Tell</ProjectLink> in
                         November of 2025. At first, I was really nervous to present since all of the 
                         other projects of the night were much more different than mine. I decided to have 
                         confidence and proudly presented my game, despite my fears. The audience seemed 
