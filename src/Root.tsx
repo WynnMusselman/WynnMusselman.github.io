@@ -4,6 +4,8 @@ import {Route, Routes} from "react-router-dom";
 import Nav from "./components/Nav.tsx";
 import Header from "./components/Header.tsx";
 import Footer from "./components/Footer.tsx";
+import GlobalStyle from "./components/GlobalStyles.tsx";
+
 
 // mains
 import Home from "./components/mains/home.tsx";
@@ -17,6 +19,9 @@ import Projects from "./components/mains/projects.tsx";
 export default function Root(){
     return(
         <>
+            {/*global styling for the whole site*/}
+            <GlobalStyle/>
+
             <Nav />
             <Header />
 
