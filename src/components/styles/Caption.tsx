@@ -5,5 +5,6 @@ export const Caption = styled.p `
     font: calc(2px + 1.4vw) monospace;
     text-align: center;
     padding-top: 0;
+    
 `
 

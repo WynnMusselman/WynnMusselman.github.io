@@ -2,6 +2,7 @@ import styled from "styled-components";
 import matchaImg from '../../assets/matcha-img-of-me.JPG';
 import BinaryHeader from "../../components/BinaryHeader";
 import {Caption} from "../styles/Caption.tsx"
+import {MultiColumnsWrapper, SmallInnerColumn, BigInnerColumn} from "../styles/Columns.tsx";
 
 
 const HomeWrapper = styled.main `
@@ -23,16 +24,14 @@ export default function Home(){
                 <h2>&lt;h2&gt; About Me &lt;/h2&gt;</h2>
 
                 {/* <!-- two column layout for img and text --> */}
-                <div className = "multi-col">
+                <MultiColumnsWrapper>
 
-                    <div className = "small-inner-col">
+                    <SmallInnerColumn>
                         <img src = {matchaImg} alt = "Wynn Musselman"/>
                         <Caption>↑ Picture of me with some matcha!</Caption>
+                    </SmallInnerColumn>
 
-                    </div>
-
-                    <div className = "big-inner-col">
-
+                    <BigInnerColumn>
                         <p>
                             My name is Wynn Musselman! I'm from the Pittsburgh area, but I go to school
                             at Boston University. I am a junior studying Computer Science
@@ -45,8 +44,9 @@ export default function Home(){
                             want to learn more about my involvement on campus or what else I am up to,
                             click through my site!
                         </p>
-                    </div>
-                </div>
+                    </BigInnerColumn>
+
+                </MultiColumnsWrapper>
             </HomeWrapper>
         </>
     )

@@ -1,5 +1,7 @@
 import styled from 'styled-components';
 import {Caption} from "../styles/Caption.tsx"
+import {MultiColumnsWrapper} from "../styles/Columns.tsx";
+
 
 
 import hackathonImg from '../../assets/hackathon-dsx.jpeg';
@@ -49,62 +51,76 @@ export default function Gallery(){
 
 
                 {/* first row */}
-
                 <GalleryStyle>
-                    <div className = "multi-col">
+                    <MultiColumnsWrapper>
+
+                        {/*Code & Tell*/}
                         <GalleryItem>
                             <GalleryImage src = {cntImg} alt = "presenting my game"/>
                             <Caption>Presenting a project I made at Code and Tell</Caption>
                         </GalleryItem>
 
+                        {/*Hockey*/}
                         <GalleryItem>
                             <GalleryImage src = {hockeyImg} alt = "hockey game with a friend"/>
                             <Caption>BU hockey game!</Caption>
                         </GalleryItem>
 
+                        {/*DS+X*/}
                         <GalleryItem>
                             <GalleryImage src = {hackathonImg} alt = "DS+X Hackathon Presentation"/>
                             <Caption>Me presenting my team's project at the DS+X hackathon</Caption>
                         </GalleryItem>
-                    </div>
+
+                    </MultiColumnsWrapper>
 
 
                     {/* second row */}
-                    <div className = "multi-col">
+                    <MultiColumnsWrapper>
+
+                        {/*MarMon*/}
                         <GalleryItem>
                             <GalleryImage src = {marmonImg} alt = "Rhett the BU mascot at the Boston Marathon"/>
                             <Caption>My first marathon monday</Caption>
                         </GalleryItem>
 
+                        {/*Pizza*/}
                         <GalleryItem>
                             <GalleryImage src = {pizzaImg} alt = "a small pizza"/>
                             <Caption>A pizza I made at Pizza IQ</Caption>
                         </GalleryItem>
 
+                        {/*Paris*/}
                         <GalleryItem>
                             <GalleryImage src = {parisImg} alt = "looking at the eiffel tower at night"/>
                             <Caption>My last night of study abroad in Paris</Caption>
                         </GalleryItem>
-                    </div>
+
+                    </MultiColumnsWrapper>
 
 
                     {/* third row */}
-                    <div className = "multi-col">
+                    <MultiColumnsWrapper>
+
+                        {/*Pirates*/}
                         <GalleryItem>
                             <GalleryImage src = {piratesImg} alt = "bobble head I got at a baseball game"/>
                             <Caption>I got a Dr. Robby bobble head at a Pirates game!!</Caption>
                         </GalleryItem>
 
+                        {/*Bits & Bytes*/}
                         <GalleryItem>
                             <GalleryImage src = {bnbImg} alt = "Presenting Bits & Bytes"/>
                             <Caption>Promoting our free coding lessons to students</Caption>
                         </GalleryItem>
 
+                        {/*Game Dev*/}
                         <GalleryItem>
                             <GalleryImage src = {gameDevImg} alt = "teaching game development"/>
                             <Caption>Teaching a game development workshop to Girls Who Code members</Caption>
                         </GalleryItem>
-                    </div>
+                    </MultiColumnsWrapper>
+
                 </GalleryStyle>
 
             </main>

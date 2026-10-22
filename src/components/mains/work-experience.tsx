@@ -1,5 +1,7 @@
 import styled from "styled-components";
-import {Caption} from "../styles/Caption.tsx"
+import {Caption} from "../styles/Caption.tsx";
+import {MultiColumnsWrapper, SmallInnerColumn, BigInnerColumn} from "../styles/Columns.tsx";
+
 
 import simcoachImg from '../../assets/simcoach-games.jpg';
 import pizzaIQImg from '../../assets/pizza-iq.jpeg';
@@ -30,7 +32,7 @@ const RoleDescription = styled.p `
 `;
 
 
-function WorkExperience(){
+export default function WorkExperience(){
     return(
         <>
             <title>Work Experience | Wynn Musselman</title>
@@ -44,14 +46,14 @@ function WorkExperience(){
                         
                     <RoleTitle><b>Community Ambassador</b> | Boston, MA  | September 2026 - Present</RoleTitle>
                        
-                    <div className = "multi-col">
+                    <MultiColumnsWrapper>
                         
-                        <div className = "small-inner-col">
+                        <SmallInnerColumn>
                             <img src = {sparkIMG} alt = "The jenga building in Boston"/>
                             <Caption>The building I get to work in!</Caption>
-                        </div>
+                        </SmallInnerColumn>
 
-                        <div className = "big-inner-col">
+                        <BigInnerColumn>
                             <RoleDescription>
                                 As a Community Ambassador for Spark!, I aid in the daily operations 
                                 and mission for the experiential and innovation learning lab housed 
@@ -67,8 +69,8 @@ function WorkExperience(){
                                 Tech Talks...) I am so excited that I now get to work in the Spark! space
                                 and help contribute to the organization.
                             </RoleDescription>
-                        </div>
-                    </div>
+                        </BigInnerColumn>
+                    </MultiColumnsWrapper>
                 </WorkItem>
 
                 {/* Grader */}
@@ -94,8 +96,8 @@ function WorkExperience(){
                         
                     <RoleTitle><b>Intern</b> | Paris, Fr  | May 2026 - July 2026</RoleTitle>
                 
-                    <div className = "multi-col">
-                        <div className = "big-inner-col">
+                    <MultiColumnsWrapper>
+                        <BigInnerColumn>
                             <RoleDescription>
                                As an intern at Dynseo, I implemented and revamped website features to 
                                enhance site interface and usability. I used AI agents to help me 
@@ -112,14 +114,13 @@ function WorkExperience(){
                                 an intercultural team. I often worked on the English translation of 
                                 the website as well as communicated with English speaking clients.
                             </RoleDescription>
-                        </div>
+                        </BigInnerColumn>
 
-                        <div className = "small-inner-col">
+                        <SmallInnerColumn>
                             <img src = {dynseoImg} alt = "the eiffel tower"/>
                             <Caption>My view on my way to work everyday</Caption>
-                            {/* <Caption>Cranberry Township, PA ⋄ June 2024 - Present</p> */}
-                        </div>
-                    </div>
+                        </SmallInnerColumn>
+                    </MultiColumnsWrapper>
                 </WorkItem>
 
 
@@ -130,14 +131,14 @@ function WorkExperience(){
                    
                     <RoleTitle><b>Digital Content Strategy Intern</b> | Boston, MA  | January 2026 - April 2026</RoleTitle>
                       
-                    <div className = "multi-col">
+                    <MultiColumnsWrapper>
                         
-                        <div className = "small-inner-col">
+                        <SmallInnerColumn>
                             <img src = {elConnectorIMG} alt = "homepage for CAS EL Connector"/>
                             <Caption>The homepage I redesigned</Caption>
-                        </div>
+                        </SmallInnerColumn>
 
-                        <div className = "big-inner-col">
+                        <BigInnerColumn>
                             <RoleDescription>
                                 While working at EL Connector, I had to think creatively and work within the 
                                 limitations of the organization's website. Since EL Connector is an organization
@@ -148,8 +149,8 @@ function WorkExperience(){
                                 the site by incorporating BU's colors wherever possible, I made descriptions of 
                                 programs offered more concise, and updated site information to be accurate.
                             </RoleDescription>
-                        </div>
-                    </div>
+                        </BigInnerColumn>
+                    </MultiColumnsWrapper>
                 </WorkItem>
 
 
@@ -160,8 +161,8 @@ function WorkExperience(){
                       
                     <RoleTitle><b>Kitchen Staff and Cashier </b>| Cranberry Township, PA  | June 2024 - Present (Seasonal)</RoleTitle>
 
-                    <div className = "multi-col">
-                        <div className = "big-inner-col">
+                    <MultiColumnsWrapper>
+                        <BigInnerColumn>
                             <RoleDescription>
                                 Once you've prepared 100+ orders on a busy Friday night in the kitchen 
                                 of a pizza place, you can do anything. While working at Pizza IQ may not
@@ -178,14 +179,14 @@ function WorkExperience(){
                                 concerns. When working in the kitchen, I prepare food to the restaurant’s 
                                 standards and often teach new employees how to complete tasks.
                             </RoleDescription>
-                        </div>
+                        </BigInnerColumn>
 
-                        <div className = "small-inner-col">
+                        <SmallInnerColumn>
                             <img src = {pizzaIQImg} alt = "me wearing the Pizza IQ uniform"/>
                             <Caption>Trying on the uniform at my first shift</Caption>
                             {/* <Caption>Cranberry Township, PA ⋄ June 2024 - Present</p> */}
-                        </div>
-                    </div>
+                        </SmallInnerColumn>
+                    </MultiColumnsWrapper>
                 </WorkItem>
 
 
@@ -196,14 +197,13 @@ function WorkExperience(){
                     
                     <RoleTitle><b>Apprentice</b> | Pittsburgh, PA  | June 2023 - July 2023</RoleTitle>
                        
-                    <div className = "multi-col">
-                        <div className = "small-inner-col">
+                    <MultiColumnsWrapper>
+                        <SmallInnerColumn>
                             <img src = {simcoachImg} alt = "me creating a video game"/>
                             <Caption>Making my first game at Simcoach</Caption>
-                            {/* <Caption>Pittsburgh, PA ⋄ June 2023 - July 2023</p> */}
-                        </div>
+                        </SmallInnerColumn>
 
-                        <div className = "big-inner-col">
+                        <BigInnerColumn>
                             <RoleDescription>
                                 As a Summer Apprentice in the Simcoach Games’ 2023 Summer Apprenticeship in Game
                                 Design and Development program, I successfully delivered two transformational
@@ -220,8 +220,8 @@ function WorkExperience(){
                                 It was incredible to get so much insight into the game development
                                 industry as a high schooler.
                             </RoleDescription>
-                        </div>
-                    </div>
+                        </BigInnerColumn>
+                    </MultiColumnsWrapper>
                 </WorkItem>
 
             </main>
@@ -229,4 +229,3 @@ function WorkExperience(){
     )
 }
 
-export default WorkExperience;
