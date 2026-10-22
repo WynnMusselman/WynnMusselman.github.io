@@ -32,6 +32,8 @@ const RoleDescription = styled.p `
 function WorkExperience(){
     return(
         <>
+            <title>Work Experience | Wynn Musselman</title>
+
             <main>
                 <h2>&lt;h2&gt; Work Experience &lt;/h2&gt;</h2>
 

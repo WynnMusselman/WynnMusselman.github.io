@@ -48,6 +48,8 @@ export default function Gallery(){
     return(
         <>
             <main>
+                <title>Gallery | Wynn Musselman</title>
+
                 <h2>&lt;h2&gt; Gallery &lt;/h2&gt;</h2>
                 <p className = "caption">&lt;p&gt; Check out some photos that are important to me! &lt;/p&gt;</p>
 

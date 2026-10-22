@@ -27,6 +27,8 @@ const ExperienceDescription = styled.div`
 export default function CampusInvolvement(){
     return(
         <CampusInvolvementWrapper>
+            <title>Campus Involvement | Wynn Musselman</title>
+
             <h2>&lt;h2&gt; Campus Involvement &lt;/h2&gt;</h2>
 
             {/* H4I */}

@@ -12,6 +12,8 @@ export default function Home(){
 
     return (
         <>
+            <title>Home | Wynn Musselman</title>
+
             {/*header for home page*/}
             <BinaryHeader />
 

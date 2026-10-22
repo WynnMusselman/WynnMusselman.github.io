@@ -27,6 +27,8 @@ const ProjectLink = styled.a `
 export default function Projects(){
     return(
         <>
+            <title>Projects | Wynn Musselman</title>
+
             <main>
                 <h2>&lt;h2&gt; Projects &lt;/h2&gt;</h2>
 
