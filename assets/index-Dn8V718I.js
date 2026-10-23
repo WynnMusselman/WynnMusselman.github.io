@@ -97,6 +97,10 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
     text-align: center;
     padding-top: 0;
     
+    @media screen and (max-width: 750px){
+        font-size: calc(2px + 2.3vw);
+    }
+    
 `,_c=U.div`
     margin-top: 0;
     position: relative;
@@ -184,6 +188,10 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
         font: calc(2px + 1.5vw) monospace;
     }
 
+    img{
+        max-width: 20vw;
+    }
+
 
     /* more info when you scroll down */
     main{
@@ -193,6 +201,32 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
         width: 90%;
 
         min-height: 100vh;
+    }
+
+    @media screen and (max-width: 800px){
+        //adjusting font sizes
+        h1{
+            font-size: calc(2px + 6vw);
+        }
+        h2{
+            font-size: calc(2px + 4.5vw) ;
+            margin-top: 4%;
+        }
+        h3{
+            font-size: calc(2px + 3vw);
+        }
+        h4{
+            font-size: calc(2px + 2.5vw);
+        }
+        p{
+            font-size: calc(2px + 2.3vw);
+        }
+        
+        //increased image size
+        img{
+            max-width: 80vw;
+        }
+        
     }
 
 
@@ -216,15 +250,6 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
         }
     }
     
-
-    /* @keyframes spin {
-        0% {
-          transform: rotate(0deg);
-        }
-        100% {
-          transform: rotate(360deg);
-        }
-      } */
 `;function Nc(){let e=(0,ao.c)(1),t;return e[0]===Symbol.for(`react.memo_cache_sentinel`)?(t=(0,W.jsx)(W.Fragment,{children:(0,W.jsx)(Mc,{})}),e[0]=t):t=e[0],t}var Pc=`/assets/matcha-img-of-me-FJfz-pf2.jpg`,Fc=U.div`
     width: 100%;
     display: flex;
@@ -261,8 +286,13 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
         
         img{
             object-fit: cover;
-            width: 400px;
-            height: 150px;
+            width: 800px;
+            height: 200px;
+            max-width: 40vw;
+        }
+        
+        ${gc}{
+            font-size: calc(2px + 2vw)
         }
     }
 `,Lc=U.div`
