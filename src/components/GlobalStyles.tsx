@@ -47,6 +47,10 @@ const GlobalStyle = createGlobalStyle`
         font: calc(2px + 1.5vw) monospace;
     }
 
+    img{
+        max-width: 20vw;
+    }
+
 
     /* more info when you scroll down */
     main{
@@ -56,6 +60,32 @@ const GlobalStyle = createGlobalStyle`
         width: 90%;
 
         min-height: 100vh;
+    }
+
+    @media screen and (max-width: 800px){
+        //adjusting font sizes
+        h1{
+            font-size: calc(2px + 6vw);
+        }
+        h2{
+            font-size: calc(2px + 4.5vw) ;
+            margin-top: 4%;
+        }
+        h3{
+            font-size: calc(2px + 3vw);
+        }
+        h4{
+            font-size: calc(2px + 2.5vw);
+        }
+        p{
+            font-size: calc(2px + 2.3vw);
+        }
+        
+        //increased image size
+        img{
+            max-width: 80vw;
+        }
+        
     }
 
 
@@ -79,15 +109,6 @@ const GlobalStyle = createGlobalStyle`
         }
     }
     
-
-    /* @keyframes spin {
-        0% {
-          transform: rotate(0deg);
-        }
-        100% {
-          transform: rotate(360deg);
-        }
-      } */
 `
 
 export default function GlobalStyles() {

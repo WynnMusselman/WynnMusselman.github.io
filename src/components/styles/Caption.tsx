@@ -6,5 +6,9 @@ export const Caption = styled.p `
     text-align: center;
     padding-top: 0;
     
+    @media screen and (max-width: 750px){
+        font-size: calc(2px + 2.3vw);
+    }
+    
 `
 

@@ -42,8 +42,13 @@ export const SmallInnerColumn = styled.div`
         
         img{
             object-fit: cover;
-            width: 400px;
-            height: 150px;
+            width: 800px;
+            height: 200px;
+            max-width: 40vw;
+        }
+        
+        ${Caption}{
+            font-size: calc(2px + 2vw)
         }
     }
 `;
