@@ -1,6 +1,5 @@
 import styled from "styled-components";
-import matchaImg from '../../assets/matcha-img-of-me.JPG';
-import BinaryHeader from "../../components/BinaryHeader";
+import matchaImg from '../assets/matcha-img-of-me.JPG';
 import {Caption} from "../styles/Caption.tsx"
 import {MultiColumnsWrapper, SmallInnerColumn, BigInnerColumn} from "../styles/Columns.tsx";
 

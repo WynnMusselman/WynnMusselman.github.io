@@ -9,11 +9,11 @@ import GlobalStyle from "./components/GlobalStyles.tsx";
 
 
 // mains
-import Home from "./components/mains/home.tsx";
+import Home from "./components/mains/Home.tsx";
 import CampusInvolvement from "./components/mains/CampusInvolvement.tsx";
-import WorkExperience from "./components/mains/work-experience.tsx";
+import WorkExperience from "./components/mains/WorkExperience.tsx";
 import Gallery from "./components/mains/Gallery.tsx";
-import Projects from "./components/mains/projects.tsx";
+import Projects from "./components/mains/Projects.tsx";
 
 
 
