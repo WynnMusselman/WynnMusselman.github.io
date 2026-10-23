@@ -1,4 +1,4 @@
-import { useMemo } from 'react';
+import { useState } from 'react';
 import styled from "styled-components";
 import {Caption} from "./styles/Caption.tsx"
 
@@ -37,24 +37,36 @@ const BINARY_OPTIONS = ["01010111 01111001 01101110 01101110", "01001101 0111010
 const COLOR_OPTIONS = ["green", "darkgreen", "greenyellow"];
 const NUM_LINES = 8;
 
-// picks a random number 0-2 for both the binary string and color option arrays
+// picks a random number 0-39
+// used for picking a random item from the binary and color lists and to randomize speed of binary lines
 function get_rand_number(): number{
-    return Math.floor(Math.random() * 3);
+    return Math.floor(Math.random() * 40);
 }
 
 export default function BinaryHeader(){
-    const binaryLines = useMemo(
-        () =>
+    const [binaryLines] = useState(() =>
+            // Array.from creates a shallow copy of a different array/array-like object
             Array.from({length: NUM_LINES}, (_, i) =>({
                 id: i,
-                text: BINARY_OPTIONS[get_rand_number()],
-                color: COLOR_OPTIONS[get_rand_number()],
-                top: `${Math.floor(Math.random() * 20)}vh`,
-                duration: `${Math.floor(Math.random() * 40) + 20}s`, //randomizes how long it takes each binary line to scroll passed
+                text: BINARY_OPTIONS[get_rand_number() % BINARY_OPTIONS.length],
+                color: COLOR_OPTIONS[get_rand_number() % COLOR_OPTIONS.length],
+                top: `${i * 20}vh`,
+                duration: `${Math.floor(get_rand_number()) + 20}s`, //randomizes how long it takes each binary line to scroll passed
+            }))
+    );
 
-            })),
-        [],
-    )
+    // const binaryLines = useMemo(
+    //     () =>
+    //         Array.from({length: NUM_LINES}, (_, i) =>({
+    //             id: i,
+    //             text: BINARY_OPTIONS[get_rand_number() % BINARY_OPTIONS.length],
+    //             color: COLOR_OPTIONS[get_rand_number() % COLOR_OPTIONS.length],
+    //             top: `${Math.floor(i * 20)}vh`,
+    //             duration: `${Math.floor(get_rand_number()) + 20}s`, //randomizes how long it takes each binary line to scroll passed
+    //
+    //         })),
+    //     [],
+    // )
 
     return (
         <>
@@ -83,4 +95,5 @@ export default function BinaryHeader(){
                 <Caption>&lt;p&gt; <i>Thanks for visiting my site :]</i> &lt;/p&gt;</Caption>
             </BinaryHeaderContainer>
         </>
-    )};
+    )
+};
