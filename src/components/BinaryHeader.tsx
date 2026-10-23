@@ -48,7 +48,7 @@ export default function BinaryHeader(){
                 text: BINARY_OPTIONS[get_rand_number() % BINARY_OPTIONS.length],
                 color: COLOR_OPTIONS[get_rand_number() % COLOR_OPTIONS.length],
                 top: `${i * 20}vh`,
-                duration: `${Math.floor(get_rand_number()) + 20}s`, //randomizes how long it takes each binary line to scroll passed
+                duration: `${get_rand_number() + 20}s`, //randomizes how long it takes each binary line to scroll passed
             }))
     );
 

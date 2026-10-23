@@ -33,13 +33,13 @@ const GlobalStyle = createGlobalStyle`
 
     h3{
         color: white;
-        font: bold calc(2px + 2vw) monospace;
+        font: bold calc(2px + 2.5vw) monospace;
     }
 
     h4{
-        font: calc(2px + 1.4vw) monospace;
+        font: calc(2px + 2vw) monospace;
         color: #549555;
-        margin: 1%;
+        margin-bottom: 2%;
     }
 
     p{
@@ -63,6 +63,10 @@ const GlobalStyle = createGlobalStyle`
     }
 
     @media screen and (max-width: 800px){
+        body{
+            max-width: 800px;
+        }
+        
         //adjusting font sizes
         h1{
             font-size: calc(2px + 6vw);

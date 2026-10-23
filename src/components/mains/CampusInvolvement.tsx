@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 const CampusInvolvementWrapper = styled.div`
-    margin: 5% 0;
     padding: 3%;
 
     animation: fadeIn;
@@ -83,11 +82,23 @@ export default function CampusInvolvement(){
                     </p>
                 </ExperienceDescription>
 
+                {/* Mentor */}
+                <ExperienceDescription>
+                    <h4><b>Mentor</b> | September 2026 - Present</h4>
+                    <p>
+                        On top of my role as an e-board member, I also act as a mentor for
+                        Girls Who Code's mentor/mentee program. I mentor three underclassmen
+                        studying Computer Science or Data Science. As a mentor, I give advice
+                        on courses, on campus opportunities, study abroad, or anything else
+                        my mentees need guidance on. I
+                    </p>
+                </ExperienceDescription>
+
                 {/* Ignite */}
                 <ExperienceDescription>
                     <h4><b>Ignite Council Representative</b> | April 2026 - Present</h4>
                     <p>
-                        On top of my role as an e-board member, I also represent Girls Who Code
+                        Additionally, I represent Girls Who Code
                         at Ignite Council meetings. The Ignite Student Council consists of
                         student leaders from tech-focused clubs on campus. As a member, I help
                         GWC gain funding, increase outreach, and recruit. Additionally, I
