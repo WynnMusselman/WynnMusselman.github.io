@@ -3,15 +3,16 @@ import {Route, Routes} from "react-router-dom";
 // components
 import Nav from "./components/Nav.tsx";
 import Header from "./components/Header.tsx";
+import BinaryHeader from "./components/BinaryHeader.tsx"
 import Footer from "./components/Footer.tsx";
 import GlobalStyle from "./components/GlobalStyles.tsx";
 
 
 // mains
 import Home from "./components/mains/home.tsx";
-import CampusInvolvement from "./components/mains/campus-involvement.tsx";
+import CampusInvolvement from "./components/mains/CampusInvolvement.tsx";
 import WorkExperience from "./components/mains/work-experience.tsx";
-import Gallery from "./components/mains/gallery.tsx";
+import Gallery from "./components/mains/Gallery.tsx";
 import Projects from "./components/mains/projects.tsx";
 
 
@@ -23,14 +24,44 @@ export default function Root(){
             <GlobalStyle/>
 
             <Nav />
-            <Header />
+
 
             <Routes>
-                <Route path = {"/"} element = {<Home />}/>
-                <Route path = {"/work-experience"} element = {<WorkExperience />}/>
-                <Route path = {"/campus-involvement"} element = {<CampusInvolvement />}/>
-                <Route path = {"/projects"} element = {<Projects />}/>
-                <Route path = {"/gallery"} element = {<Gallery />}/>
+                <Route path = {"/"} element = {
+                        <>
+                            <BinaryHeader />
+                            <Home />
+                        </>
+                    }
+                />
+                <Route path = {"/work-experience"} element = {
+                        <>
+                            <Header />
+                            <WorkExperience />
+                        </>
+                    }
+                />
+                <Route path = {"/campus-involvement"} element = {
+                        <>
+                            <Header />
+                            <CampusInvolvement />
+                        </>
+                   }
+                />
+                <Route path = {"/projects"} element = {
+                       <>
+                           <Header />
+                           <Projects />
+                       </>
+                   }
+                />
+                <Route path = {"/gallery"} element = {
+                        <>
+                            <Header />
+                            <Gallery />
+                        </>
+                    }
+                />
             </Routes>
 
             <Footer />

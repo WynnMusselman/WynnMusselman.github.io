@@ -57,13 +57,6 @@ const GlobalStyle = createGlobalStyle`
 
         min-height: 100vh;
     }
-    //
-    //.multi-col .small-inner-col .caption{
-    //    color: greenyellow;
-    //    font: italic calc(2px + 1.1vw) monospace;
-    //    text-align: center;
-    //    padding-top: 0;
-    //}
 
 
     /* animation */

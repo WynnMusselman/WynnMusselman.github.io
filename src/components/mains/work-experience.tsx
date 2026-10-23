@@ -81,7 +81,7 @@ export default function WorkExperience(){
                        
                     <RoleDescription>
                         I am a grader for CAS CS 103: Introduction to Internet Technologies and 
-                        Web Programming. As a grader, I will evaluate 180+ mini projects created
+                        Web Programming. As a grader, I evaluate 120+ website-based mini projects created
                         by students while also giving detailed, constructive feedback. I collaborate 
                         with the class's Professor, TA, and fellow grader to ensure accurate and 
                         quality grades and feedback are given to students.
@@ -118,7 +118,7 @@ export default function WorkExperience(){
 
                         <SmallInnerColumn>
                             <img src = {dynseoImg} alt = "the eiffel tower"/>
-                            <Caption>My view on my way to work everyday</Caption>
+                            <Caption>The view on my way to work everyday</Caption>
                         </SmallInnerColumn>
                     </MultiColumnsWrapper>
                 </WorkItem>

@@ -17,9 +17,6 @@ export default function Home(){
         <>
             <title>Home | Wynn Musselman</title>
 
-            {/*header for home page*/}
-            <BinaryHeader />
-
             <HomeWrapper>
                 <h2>&lt;h2&gt; About Me &lt;/h2&gt;</h2>
 
@@ -28,7 +25,7 @@ export default function Home(){
 
                     <SmallInnerColumn>
                         <img src = {matchaImg} alt = "Wynn Musselman"/>
-                        <Caption>↑ Picture of me with some matcha!</Caption>
+                        <Caption>Picture of me with some matcha!</Caption>
                     </SmallInnerColumn>
 
                     <BigInnerColumn>
@@ -38,7 +35,7 @@ export default function Home(){
                             with a minor in Political Science.
                         </p>
                         <p>
-                            This semester, I am on the e-board for BU's Girls Who Code chapter and I teach
+                            This semester, I am on the E-Board for BU's Girls Who Code chapter and I teach
                             web development lessons for the Hack4Impact chapter. Additionally, I am a
                             community ambassador for Spark! and a grader for a web development class. If you
                             want to learn more about my involvement on campus or what else I am up to,

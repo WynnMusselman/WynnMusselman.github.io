@@ -62,6 +62,7 @@ export default function BinaryHeader(){
             <BinaryHeaderContainer>
                 {/*binary numbers in background*/}
                 <BinaryWrapper>
+                    {/*creating each item in the object*/}
                     {binaryLines.map((line) =>(
                         <BinaryLine
                             key = {line.id}
